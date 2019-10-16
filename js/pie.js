@@ -36,8 +36,8 @@
         data.forEach(function (cData) {
             var c = document.createElementNS('http://www.w3.org/2000/svg', 'g');
             var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-            rect.setAttribute("width", "10");
-            rect.setAttribute("height", "10");
+            rect.setAttribute("width", "100");
+            rect.setAttribute("height", "100");
             c.setAttribute("transform", "translate(0," + (150 + (y += 20)) + ")");
             var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
             text.innerHTML = cData.title;
@@ -125,7 +125,6 @@
     }();
 
       if (options.legend) {
-	  legend.setAttribute("stroke-width", 100);
         legend.setAttribute("transform", "translate(0," + pieRadius  + ")");
     }
 
