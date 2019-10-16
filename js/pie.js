@@ -27,7 +27,7 @@
 
   window.drawPieChart = function(data, options) {
       var W = this.clientWidth,
-        H = this.clientHeight * 2,
+        H = this.clientHeight,
         y = 0;
 
     if (options.legend) {
