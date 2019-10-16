@@ -54,7 +54,7 @@
     }
 
     var centerX = W/2,
-	centerY = -H/2,
+	centerY = H/2,
       cos = Math.cos,
       sin = Math.sin,
       PI = Math.PI,
@@ -124,7 +124,8 @@
       base.setAttribute("fill", settings.baseColor);
     }();
 
-    if (options.legend) {
+      if (options.legend) {
+	  legend.setAttribute("stroke-width", 100);
         legend.setAttribute("transform", "translate(0," + pieRadius  + ")");
     }
 
