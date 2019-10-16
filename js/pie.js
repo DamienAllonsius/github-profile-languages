@@ -63,8 +63,8 @@
         segmentStrokeColor : "#fff",
         segmentStrokeWidth : 1,
         baseColor: "#fff",
-        baseOffset: 15,
-        edgeOffset: 30,//offset from edge of this
+        baseOffset: 0,
+        edgeOffset: 0,//offset from edge of this
         pieSegmentGroupClass: "pieSegmentGroup",
         pieSegmentClass: "pieSegment",
         lightPiesOffset: 12,//lighten pie's width
