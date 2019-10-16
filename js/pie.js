@@ -54,7 +54,7 @@
     }
 
     var centerX = W/2,
-      centerY = 0,
+	centerY = -H/2,
       cos = Math.cos,
       sin = Math.sin,
       PI = Math.PI,
