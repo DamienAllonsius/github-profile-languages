@@ -27,7 +27,7 @@
 
   window.drawPieChart = function(data, options) {
       var W = this.clientWidth,
-        H = this.clientHeight,
+        H = this.clientHeight * 2,
         y = 0;
 
     if (options.legend) {
@@ -36,8 +36,8 @@
         data.forEach(function (cData) {
             var c = document.createElementNS('http://www.w3.org/2000/svg', 'g');
             var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-            rect.setAttribute("width", "100");
-            rect.setAttribute("height", "100");
+            rect.setAttribute("width", "10");
+            rect.setAttribute("height", "10");
             c.setAttribute("transform", "translate(0," + (150 + (y += 20)) + ")");
             var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
             text.innerHTML = cData.title;
